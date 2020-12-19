@@ -4,7 +4,11 @@ const bt = {
         val: 2,
         left: {
             val: 4,
-            left: null,
+            left: {
+                val: 8,
+                left: null,
+                right: null,
+            },
             right: null,
         },
         right: {

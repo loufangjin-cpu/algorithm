@@ -29,10 +29,12 @@ const tree = {
         }
     ],
 };
-
+// 深度优先
+// 访问根节点、对根节点的children进行递归操作
 const dfs = (root) => {
     console.log(root.val);
     root.children.forEach(dfs);
 };
 
 dfs(tree);
+

@@ -1,12 +1,12 @@
 const bt = require('./bt');
-
-const inorder = (root) => {
-    if (!root) { return; }
-    inorder(root.left);
-    console.log(root.val);
-    inorder(root.right);
-};
-
+// 中序遍历递归版
+// const inorder = (root) => {
+//     if (!root) { return; }
+//     inorder(root.left);
+//     console.log(root.val);
+//     inorder(root.right);
+// };
+// 中序遍历非递归版
 // const inorder = (root) => {
 //     if (!root) { return; }
 //     const stack = [];
@@ -22,4 +22,6 @@ const inorder = (root) => {
 //     }
 // };
 
-inorder(bt);
+// inorder(bt);
+
+
