@@ -39,3 +39,48 @@ var maxDepth = function (root) {
     return res
 }
 console.log('max', maxDepth(bt))
+
+// leedCode 111  找出找出最小深度
+var bt1 = {
+    val: 1,
+    left: {
+        val: 2,
+        left: {
+            val: 4,
+            left: null,
+            right: null,
+        },
+        right: {
+            val: 5,
+            left: null,
+            right: null,
+        },
+    },
+    right: {
+        val: 3,
+        left: {
+            val: 6,
+            left: null,
+            right: null,
+        },
+        right: {
+            val: 7,
+            left: null,
+            right: null,
+        },
+    },
+};
+var minDepth = function (root) {
+    if(!root) return 0
+    const que = [[root, 1]]
+    while(que.length) {
+        const [cur, l] = que.shift()
+        // console.log(cur.val)
+        if(!cur.left && !cur.right) {
+            return l
+        }
+        if(cur.left) que.push([cur.left, l + 1])
+        if(cur.right) que.push([cur.right, l + 1])
+    }
+}
+console.log('min', minDepth(bt1))
