@@ -1,3 +1,6 @@
 # js-algorithm
 
 JavaScript 实现数据结构与算法
+# new token
+5515b1c238f0c49fb7d6d855b374674796864f94
+75d65ed65da9abe5120ee77e86f13d12
